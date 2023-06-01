@@ -1,0 +1,39 @@
+html(lang="ru")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Magic SQooL 
+    link(rel="stylesheet" href="css/style.css" url="?v=1")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous")
+    script(src="js/auth.js")
+  body 
+    .custom-container
+      .header
+        img(src="img/logo.png").logo
+        .user
+          .user-character-area 
+            img(src="img/kiki.png").user-character
+          .level-area
+            span.level=userName
+          button(type="submit" id="exit").btn-exit выйти
+      ul.nav.nav-tabs
+        li.nav-item
+          a.nav-link(href="/", data-toggle="tab") Мои эпизоды
+        li.nav-item
+          a.nav-link(href="#my-achievements", data-toggle="tab") Мои постеры
+      .tab-content
+        .tab-pane.fade.show.active#my-episodes
+          .page-content.tab-pane(style="background-image: url('img/cover.png')")
+            .tab-content-wrapper
+              img(src=background)
+              form(method="post")
+                .text-area 
+                  .choice-area 
+                    ol(id="choice" style="margin-left:100px;")
+                      each choice in choices
+                        li(id=choice.id)
+                          span= choice.text
+              .main-character-area 
+                img(src="img/kiki.png")
+          script(src="js/select.js")

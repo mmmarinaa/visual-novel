@@ -1,0 +1,142 @@
+body {
+  background-image: url(https://abrakadabra.fun/uploads/posts/2022-02/1644039805_1-abrakadabra-fun-p-fon-dlya-platformera-1.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Roboto", sans-serif;
+  overflow: hidden;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+  position: absolute;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  border-radius: 20px;
+  padding: 10px;
+  max-width: 250px;
+  min-width: 200px;
+  height: fit-content;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+#error-message {
+  text-align: center;
+  margin: 10px;
+  margin-top: 0;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.logo {
+  height: 150px;
+  margin-bottom: 20px;
+}
+
+.auth {
+  border-radius: 20px;
+  background-color: rgb(255, 255, 255);
+  width: 350px;
+  height: 380px;
+  padding: 30px;
+}
+
+.my-input {
+  border: 1px solid aliceblue;
+  border-radius: 10px;
+  height: 40px;
+  width: 100%;
+  margin-bottom: 10px;
+  background-color: aliceblue;
+}
+
+.my-input:focus {
+  outline: 2px solid rgb(171, 211, 246);
+}
+
+.btn-place {
+  position: relative;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.btn-place > span {
+  display: block;
+}
+
+.btn-place > a {
+  display: block;
+}
+
+.btn-continue {
+  border: 0;
+  border-radius: 10px;
+  padding: 8px;
+  width: fit-content;
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: white;
+  background: #2ee59d;
+  transition: 0.3s;
+  position: relative;
+  top: 0;
+}
+
+.btn-continue:hover {
+  color: #2ee59d;
+  background: white;
+  border: 1px solid #2ee59d;
+  box-shadow: 0 10px 15px rgba(46, 229, 157, 0.4);
+  transform: scale(1.03) translateY(-3px);
+}
+
+.btn-place a {
+  color: #469978;
+  text-decoration: none;
+}
+
+.btn-place a:hover {
+  color: #2e6750;
+  text-decoration: none;
+}

@@ -1,0 +1,49 @@
+html(lang="ru")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Magic SQooL 
+    link(rel="stylesheet" href="css/style.css" url="?v=1")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous")
+    script(src="js/auth.js")
+  body 
+    .custom-container
+      .header
+        img(src="img/logo.png").logo
+        .user
+          .user-character-area 
+            img(src="img/kiki.png").user-character
+          .level-area
+            span.level=userName
+          button(type="submit" id="exit").btn-exit выйти
+      .task Задание: Напишите по порядку станции, о которых вы сегодня узнали, чтобы попасть на школьную церемонию. Порядок расположения: сверху - вниз.
+      ul.nav.nav-tabs
+        li.nav-item
+          a.nav-link(href="/", data-toggle="tab") Мои эпизоды
+        li.nav-item
+          a.nav-link(href="/posters", data-toggle="tab") Мои постеры
+      .tab-content
+        .tab-pane.fade.show.active#my-episodes
+          .page-content.tab-pane(style="background-image: url('img/cover.png')")
+            .tab-content-wrapper
+              img(src=background)
+              form(id="station-form" action="/task" method="post")
+                input(name="input-1").input-station.input-coordinate-1 
+                input(name="input-2").input-station.input-coordinate-2
+                input(name="input-3").input-station.input-coordinate-3
+                input(name="input-4").input-station.input-coordinate-4
+                input(type="submit" value="Отправиться в путь").btn-send 
+              if error
+                .error-message Кажется, в маршруте где-то ошибка.
+                img(src="img/question-mark.png" title="Подсказка" id="help").help
+                .overlay 
+                  .modal 
+                    .wrapper
+                      p Первая станция - это заклинание, которое позволяет что то создавать.
+                      p Вторая станция - это заклинание, которое позволяет выбрать необходимые предметы. 
+                      p Третья станция - это заклинание, которое позволяет удалять ненужные предметы.
+                      p Четвертая станция - это заклинание, которое позволяет обновить какой-либо предмет.
+                      .btn-continue-place
+                        button(id="btn-continue").btn-continue  Спасибо!
+                script(src="js/show_modal.js")

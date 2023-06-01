@@ -1,0 +1,33 @@
+html(lang="ru")
+  head 
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title Magic SQooL 
+    link(rel="stylesheet" href="css/registration.css" url="?v=1")
+    link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous")
+
+  body 
+    .container
+      img(src="img/logo.png").logo
+      .auth 
+        form(method="POST" id="login-form")
+            label(for="login") Введите логин:
+            input(type="text" id="login").my-input
+            label(for="password") Введите пароль:
+            input(type="password" id="password").my-input
+            .btn-place
+              if check
+                button(type="submit" id="auth").btn-continue Войти
+                span Нет аккаунта?
+                a(href="/reg") Зарегистрироваться
+              else 
+                button(type="submit" id="reg").btn-continue Зарегистрироваться
+            #modal.modal
+              .modal-content
+                span.close &times;
+                p#error-message
+            script(src="js/query.js")
+
+
+
