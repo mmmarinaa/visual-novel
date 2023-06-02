@@ -1,4 +1,4 @@
-const { findUserById } = require("../db.js");
+const { findUserById } = require("../models/db");
 
 const userMiddleware = async (req, res, next) => {
   try {

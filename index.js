@@ -30,7 +30,7 @@ const {
   getChoicesByDialogue,
   getNextDialogueByChoice,
   insertUserProgress,
-} = require("./db.js");
+} = require("./models/db");
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static("public"));
