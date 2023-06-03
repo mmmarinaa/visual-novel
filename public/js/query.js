@@ -40,7 +40,6 @@ document
     xhr.send(data);
   });
 
-// Открытие модального окна
 function openModal(errorMessage) {
   const modal = document.getElementById("modal");
   const errorMessageElement = document.getElementById("error-message");
@@ -48,16 +47,13 @@ function openModal(errorMessage) {
   modal.style.display = "block";
 }
 
-// Закрытие модального окна
 function closeModal() {
   const modal = document.getElementById("modal");
   modal.style.display = "none";
 }
 
-// Обработчик клика по кнопке закрытия модального окна
 document.querySelector(".close").addEventListener("click", closeModal);
 
-// Обработчик клика вне модального окна для закрытия
 window.addEventListener("click", function (event) {
   const modal = document.getElementById("modal");
   if (event.target === modal) {

@@ -14,7 +14,9 @@ document.getElementById("exit").addEventListener("click", function (event) {
 
         window.location.href = "/auth";
       } else {
-        // Обработка ошибок при logout
+        const errorResponse = JSON.parse(xhr.responseText);
+        const errorMessage = errorResponse.message;
+        openModal(errorMessage);
       }
     }
   };
