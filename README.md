@@ -50,3 +50,13 @@
     <li>Введите node index.js, чтобы запустить проект</li>
     <li>Перейдите http://localhost:1338/ и увидите ваш проект</li>
 </ol>
+
+<h3>Пользовательский интерфейс</h3>
+
+<h4> Страница авторизации </h4>
+![Sign in](https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок1.png)
+
+
+
+
+
