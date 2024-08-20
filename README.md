@@ -51,11 +51,25 @@
     <li>Перейдите http://localhost:1338/ и увидите ваш проект</li>
 </ol>
 
-<h3>Пользовательский интерфейс</h3>
+<h2>Пользовательский интерфейс</h2>
 
 <h4> Страница авторизации </h4>
 <img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок1.png" alt="Страница авторизации"/>
 
+<h4> Главный экран </h4>
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок2.png" alt="Главный экран"/>
+
+<h4> Игровой процесс </h4>
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок3.png" alt="Игровой процесс"/>
+
+<h4> Интерактивное задание </h4>
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок4.png" alt="Интерактивное задание"/>
+
+<h4> Список постеров </h4>
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок5.png" alt="Список постеров"/>
+
+<h4> Получение постера </h4>
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок6.png" alt="Получение постера"/>
 
 
 
