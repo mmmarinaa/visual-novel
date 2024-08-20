@@ -54,7 +54,7 @@
 <h3>Пользовательский интерфейс</h3>
 
 <h4> Страница авторизации </h4>
-![Sign in](https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок1.png)
+<img src="https://github.com/mmmarinaa/visual-novel/blob/main/Рисунок1.png" alt="Страница авторизации"/>
 
 
 
